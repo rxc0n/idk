@@ -1,0 +1,173 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+local ScreenGui = Instance.new("ScreenGui")
+local Key = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local ImageLabel = Instance.new("ImageLabel")
+local Frame = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local Frame_2 = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local TextBox = Instance.new("TextBox")
+local UIPadding = Instance.new("UIPadding")
+local Accent = Instance.new("Frame")
+local Frame_3 = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local Frame_4 = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local ImageLabel_3 = Instance.new("ImageLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Key.Name = "Key"
+Key.Parent = ScreenGui
+Key.AnchorPoint = Vector2.new(0.5, 0.5)
+Key.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Key.Position = UDim2.new(0.5, 0, 0.5, 0)
+Key.Size = UDim2.new(0, 321, 0, 264)
+
+UICorner.CornerRadius = UDim.new(0, 5)
+UICorner.Parent = Key
+
+ImageLabel.Parent = Key
+ImageLabel.Active = true
+ImageLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Position = UDim2.new(0.5, 0, 0.5, 0)
+ImageLabel.Size = UDim2.new(1, 48, 1, 48)
+ImageLabel.ZIndex = -2
+ImageLabel.Image = "rbxassetid://6049668989"
+ImageLabel.ScaleType = Enum.ScaleType.Slice
+ImageLabel.SliceCenter = Rect.new(128, 128, 128, 128)
+ImageLabel.SliceScale = 0.350
+
+Frame.Parent = Key
+Frame.AnchorPoint = Vector2.new(0.5, 0.5)
+Frame.BackgroundColor3 = Color3.fromRGB(224, 224, 250)
+Frame.Position = UDim2.new(0, 155, 0, 57)
+Frame.Size = UDim2.new(0, 50, 0, 50)
+Frame.ZIndex = 2
+
+UICorner_2.CornerRadius = UDim.new(1, 0)
+UICorner_2.Parent = Frame
+
+ImageLabel_2.Parent = Frame
+ImageLabel_2.AnchorPoint = Vector2.new(0.5, 0.5)
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.BackgroundTransparency = 1.000
+ImageLabel_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+ImageLabel_2.Size = UDim2.new(0.5, 0, 0.5, 0)
+ImageLabel_2.ZIndex = 2
+ImageLabel_2.Image = "http://www.roblox.com/asset/?id=6026568260"
+ImageLabel_2.ImageColor3 = Color3.fromRGB(98, 98, 246)
+
+UIAspectRatioConstraint.Parent = Frame
+
+TextLabel.Parent = Key
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0, 54, 0, 105)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.GothamMedium
+TextLabel.Text = "Key"
+TextLabel.TextColor3 = Color3.fromRGB(55, 55, 55)
+TextLabel.TextSize = 15.000
+TextLabel.TextYAlignment = Enum.TextYAlignment.Top
+
+TextLabel_2.Parent = Key
+TextLabel_2.AnchorPoint = Vector2.new(0.5, 0)
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0, 155, 0, 125)
+TextLabel_2.Size = UDim2.new(0, 295, 0, 50)
+TextLabel_2.Font = Enum.Font.Gotham
+TextLabel_2.Text = "Enter your Key, from Discord, to verify your whitelist"
+TextLabel_2.TextColor3 = Color3.fromRGB(148, 148, 148)
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+TextLabel_2.TextYAlignment = Enum.TextYAlignment.Top
+
+Frame_2.Parent = Key
+Frame_2.Active = true
+Frame_2.AnchorPoint = Vector2.new(0.5, 0)
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.Position = UDim2.new(0.5, 0, 0, 168)
+Frame_2.Size = UDim2.new(1, -25, 0, 30)
+
+UICorner_3.CornerRadius = UDim.new(0, 4)
+UICorner_3.Parent = Frame_2
+
+TextBox.Parent = Frame_2
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.BackgroundTransparency = 1.000
+TextBox.Size = UDim2.new(1, 0, 1, 0)
+TextBox.Font = Enum.Font.Gotham
+TextBox.PlaceholderColor3 = Color3.fromRGB(150, 150, 150)
+TextBox.PlaceholderText = "KEY"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(61, 61, 61)
+TextBox.TextSize = 13.000
+TextBox.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding.Parent = TextBox
+UIPadding.PaddingLeft = UDim.new(0, 10)
+
+Accent.Name = "Accent"
+Accent.Parent = Frame_2
+Accent.AnchorPoint = Vector2.new(1, 0)
+Accent.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
+Accent.BorderSizePixel = 0
+Accent.Position = UDim2.new(1, 0, 1, 0)
+Accent.Size = UDim2.new(1, -10, 0, 2)
+
+Frame_3.Parent = Key
+Frame_3.AnchorPoint = Vector2.new(0, 1)
+Frame_3.BackgroundColor3 = Color3.fromRGB(235, 235, 235)
+Frame_3.BackgroundTransparency = 1.000
+Frame_3.Position = UDim2.new(0, 0, 1, 0)
+Frame_3.Size = UDim2.new(1, 0, 0, 50)
+
+UICorner_4.CornerRadius = UDim.new(0, 5)
+UICorner_4.Parent = Frame_3
+
+Frame_4.Parent = Frame_3
+Frame_4.BackgroundColor3 = Color3.fromRGB(235, 235, 235)
+Frame_4.BackgroundTransparency = 1.000
+Frame_4.BorderSizePixel = 0
+Frame_4.Size = UDim2.new(1, 0, 0, 10)
+
+TextButton.Parent = Frame_3
+TextButton.BackgroundColor3 = Color3.fromRGB(99, 99, 247)
+TextButton.Position = UDim2.new(0.264516115, 0, 0.140000001, -5)
+TextButton.Size = UDim2.new(0, 143, 0, 35)
+TextButton.ZIndex = 2
+TextButton.Font = Enum.Font.Gotham
+TextButton.Text = "Submit"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 14.000
+
+UICorner_5.CornerRadius = UDim.new(0, 5)
+UICorner_5.Parent = TextButton
+
+ImageLabel_3.Parent = TextButton
+ImageLabel_3.Active = true
+ImageLabel_3.AnchorPoint = Vector2.new(0.5, 0.5)
+ImageLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_3.BackgroundTransparency = 1.000
+ImageLabel_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+ImageLabel_3.Size = UDim2.new(1, 48, 1, 48)
+ImageLabel_3.Image = "rbxassetid://6049668989"
+ImageLabel_3.ImageColor3 = Color3.fromRGB(99, 99, 247)
+ImageLabel_3.ScaleType = Enum.ScaleType.Slice
+ImageLabel_3.SliceCenter = Rect.new(128, 128, 128, 128)
+ImageLabel_3.SliceScale = 0.350
